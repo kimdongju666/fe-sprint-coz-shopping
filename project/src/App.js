@@ -4,6 +4,7 @@ import ProductList from './pages/ProductList';
 import BookMark from './pages/BookMark';
 import Home from './pages/Home';
 import Header from './component/Header';
+import Footer from './component/Footer';
 
 
 
@@ -20,6 +21,7 @@ function App() {
           <Route path="/bookmark" element={<BookMark />} />
         </Routes>
       </div>
+      <Footer />
       </BrowserRouter>
     </div>
   );
