@@ -1,0 +1,107 @@
+header {
+  background-color: white;
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 9;
+  border-bottom: 1px solid lightgray;
+}
+
+header .inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  height: 90px;
+}
+header .inner .Logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-grow: 1;
+}
+header .inner .Menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-grow: 1;
+  position: relative;
+}
+.codestates {
+  width: 100px;
+  height: 70px;
+  margin-right: 20px;
+}
+.hamburger {
+  width: 50px;
+  height: 50px;
+}
+.codestates:hover,
+.hamburger:hover {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header .basket {
+  display: none;
+  width: 250px;
+  border: 1px solid #d2d2d2;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: #fff;
+  position: absolute;
+  top: calc(100% + 4px);
+  right: -6px;
+}
+header .basket.show {
+  display: block;
+}
+header .basket .arrow {
+  width: 20px;
+  height: 10px;
+  position: absolute;
+  top: -10px;
+  right: 20px;
+  overflow: hidden;
+}
+header .basket .arrow::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border: 1px solid #d2d2d2;
+  background-color: #fff;
+  transform: rotate(45deg);
+  transform-origin: 0 0;
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+
+header .basket .message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+header .basket ul {
+  padding: 0;
+  margin: 0;
+}
+header .basket ul li div img{
+  width: 20px;
+  height: 20px;
+  margin-right: 7px;
+}
+header .basket ul li div{
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #ccc;
+}
+header .basket ul li {
+  list-style-type: none;
+}
